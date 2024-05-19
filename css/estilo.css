@@ -95,3 +95,49 @@ body {
     top: 30%;
     transform: translate(-50%, -50%);
 }
+
+
+@media only screen and (max-width: 600px) {
+    .text {
+        font-size: 18px;
+    }
+
+    .animate-character {
+        font-size: 24px;
+    }
+
+    #moving-button, .btn-sim {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .text {
+        font-size: 24px;
+    }
+
+    .animate-character {
+        font-size: 30px;
+    }
+
+    #moving-button, .btn-sim {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .text {
+        font-size: 30px;
+    }
+
+    .animate-character {
+        font-size: 36px;
+    }
+
+    #moving-button, .btn-sim {
+        font-size: 24px;
+        padding: 20px 40px;
+    }
+}
