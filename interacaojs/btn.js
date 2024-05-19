@@ -18,12 +18,11 @@ button.addEventListener('mouseleave', function () {
   clearInterval(intervalId);
 });
 
-button.addEventListener('touchstart', function () {
+button.addEventListener('click', function () {
   button.style.pointerEvents = 'none';
   intervalId = setInterval(moveButton, 10);
-});
-
-button.addEventListener('touchend', function () {
-  button.style.pointerEvents = 'auto';
-  clearInterval(intervalId);
+  setTimeout(function () {
+    button.style.pointerEvents = 'auto';
+    clearInterval(intervalId);
+  }, 10); // O botão se moverá por 1 segundo após o clique
 });
