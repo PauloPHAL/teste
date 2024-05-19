@@ -8,15 +8,15 @@ function moveButton() {
   button.style.top = y + 'px';
 }
 
-button.addEventListener('mouseenter', function () {
-  button.style.pointerEvents = 'none';
-  intervalId = setInterval(moveButton, 10);
-});
+// button.addEventListener('mouseenter', function () {
+//   button.style.pointerEvents = 'none';
+//   intervalId = setInterval(moveButton, 10);
+// });
 
-button.addEventListener('mouseleave', function () {
-  button.style.pointerEvents = 'auto';
-  clearInterval(intervalId);
-});
+// button.addEventListener('mouseleave', function () {
+//   button.style.pointerEvents = 'auto';
+//   clearInterval(intervalId);
+// });
 
 button.addEventListener('click', function () {
   button.style.pointerEvents = 'none';
@@ -24,5 +24,5 @@ button.addEventListener('click', function () {
   setTimeout(function () {
     button.style.pointerEvents = 'auto';
     clearInterval(intervalId);
-  }, 10); // O botão se moverá por 1 segundo após o clique
+  }, 10);
 });
