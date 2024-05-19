@@ -17,3 +17,13 @@ button.addEventListener('mouseleave', function () {
   button.style.pointerEvents = 'auto';
   clearInterval(intervalId);
 });
+
+button.addEventListener('touchstart', function () {
+  button.style.pointerEvents = 'none';
+  intervalId = setInterval(moveButton, 10);
+});
+
+button.addEventListener('touchend', function () {
+  button.style.pointerEvents = 'auto';
+  clearInterval(intervalId);
+});
